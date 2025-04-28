@@ -1,0 +1,137 @@
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#contenido{
+    width: 80%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#imagen img{
+    width: 20vw;
+    border-radius: 45%;
+    box-shadow: 0 0 25px #050505;
+    cursor: pointer;
+    animation: imagenFlotante 4s ease-in-out infinite;
+    transition: 0.4s;
+}
+#imagen img:hover{
+    box-shadow: 0 0 25px var(--color-primario);
+    box-shadow: 0 0 45px var(--color-primario);
+    box-shadow: 0 0 65px var(--color-primario);
+}
+@keyframes imagenFlotante{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-2rem);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+#texto{
+    margin-left: 5rem;
+}
+#texto h3{
+    font-size: 2rem;
+    font-weight: 700;
+}
+span{
+        color: #fff;
+        text-shadow:
+          3px 3px 0 #000,
+          -3px 3px 0 #000,
+          -3px -3px 0 #000,
+          3px -3px 0 #000;
+}
+#texto h1{
+    font-size: 4em;
+    font-weight: 700;
+}
+#texto p{
+    margin-top: 1%;
+    font-size: 1rem;
+}
+#botonazo{
+    margin-top: 2%;
+    display: inline-block;
+    width: 30%;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-primario);
+    border-radius: 4rem;
+    font-size: 1.2rem;
+    transition: 0.4s;
+}
+#botonazo:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    background-color: var(--color-secundario);
+}
+#botonazo a{
+    text-decoration: none;
+    color: var(--color-terciario);
+}
+
+
+@media (max-width: 768px) {
+    #contenido{
+        flex-direction: column;
+    }
+    #texto h3{
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+    #texto h1{
+        font-size: 3em;
+        font-weight: 700;
+    }
+    #texto p{
+        margin-top: 1%;
+        font-size: 0.8rem;
+    }
+    #texto{
+        order:2;
+        margin-left:5rem ;
+    }
+    #imagen img{
+        width: 40vw;
+        margin-top: 5em;
+    }
+}
+@media (max-width: 480){
+
+#texto h3{
+    font-size: 12px;
+    font-weight: 700;
+}
+#texto h1{
+    font-size: 24px;
+    font-weight: 700;
+}
+#texto p{
+    margin-top: 1%;
+    font-size: 10px;
+}
+#texto{
+    order:2;
+    margin-left:5rem ;
+    overflow-y:auto ;
+}
+#imagen img{
+    width: 40vw;
+    margin-top: 5em;
+}
+#botonazo a{
+    font-size: 10px;
+}
+}
