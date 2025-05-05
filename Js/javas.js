@@ -6,20 +6,3 @@ const typed = new Typed('.texto-multiple', {
     loop:true,
 });
 
-document.addEventListener("DOMContentLoaded", function() {
-    const titulo = document.querySelector("#titulo h2");
-
-    titulo.addEventListener("mouseenter", () => {
-        titulo.style.transition = "transform 0.3s";
-        titulo.style.transform = "scale(1.2)";
-    });
-
-    titulo.addEventListener("mouseleave", () => {
-        titulo.style.transition = "transform 0.3s";
-        titulo.style.transform = "scale(1)";
-    });
-});
-
-document.getElementById('contact-form').addEventListener('submit', function(event) {
-    event.preventDefault();
-});

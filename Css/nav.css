@@ -1,6 +1,4 @@
-main {
-    margin-top: 12vh; 
-}
+
 header{
     width: 100%;
     position: fixed;
@@ -66,7 +64,7 @@ img{
     font-size: 2.2em;
     text-shadow: 3px 1.5px 11px var(--color-terciario);
 }
-@media (max-width:762px){
+@media (max-width:768px){
     header label{
         display: initial;
         width: 35px;

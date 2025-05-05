@@ -1,4 +1,4 @@
-const header=`<div id="titulo">
+const header=` <div id="titulo">
             <i class="fa-regular fa-face-smile"></i><h2>Julian</h2>
         </div> 
         <input type="checkbox" id="boton-menu">
@@ -7,8 +7,8 @@ const header=`<div id="titulo">
             <div id="menuderecha"></div>
                 <ul>
                     <li><a href="index.html">Inicio</a></li>
-                    <li><a href="pagina1.html">Proyectos</a></li>
-                    <li><a href="pagina2.html">Contacto</a></li>
+                    <li><a href="proyectos.html">Proyectos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
                 </ul>
             </div>
         </nav>`;
