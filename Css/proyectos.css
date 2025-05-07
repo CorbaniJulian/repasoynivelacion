@@ -39,10 +39,10 @@
   @media (max-width: 768px){
     .contenedor-proyecto{
       display: flex;
-      justify-content: center;
       align-items: center;
       flex-direction: column;
       max-height: 70vh;
+      overflow-y: auto;
     }
     .proyecto{
       width: 40%;
